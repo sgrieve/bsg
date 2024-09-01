@@ -1,0 +1,351 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Terrestrial Laser Scanning for forest geomorphology</title>
+
+		<meta name="description" content="Terrestrial Laser Scanning for forest geomorphology">
+		<meta name="author" content="Stuart Grieve">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <link rel="stylesheet" href="reveal/css/reset.css">
+		<link rel="stylesheet" href="reveal/css/reveal.css">
+    <link rel="stylesheet" href="reveal/css/custom.css">
+		<link rel="stylesheet" href="reveal/css/theme/night.css" id="theme">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="reveal/lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'reveal/css/print/pdf.css' : 'reveal/css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+
+
+<section data-markdown>
+<textarea data-template>
+
+![a forest at dusk](img/title.png) <!-- .element width="90%" class="plain"-->
+
+</textarea>
+</section>
+
+<section data-markdown>
+<textarea data-template>
+
+### Forests and landscapes are interconnected, reflecting the interplay of climate, biology, lithology, hydrology and people
+
+
+</textarea>
+</section>
+
+
+<section data-markdown>
+<textarea data-template>
+
+### Forests and landscapes
+
+Often when we study one, we simplify the other:
+
+![Text from a paper about removing elevation](img/detrend.png) <!-- .element width="80%" -->
+
+![Schematic of a tree](img/gabet_tree.png) <!-- .element width="40%" -->
+
+<p class="caption"><a href="https://doi.org/10.1146/annurev.earth.31.100901.141314">Gabet et al., 2003</a>|<a href="https://doi.org/10.1016/j.foreco.2022.120733">Yrttimaa et al., 2023</a> </p>
+
+</textarea>
+</section>
+
+<section data-markdown>
+<textarea data-template>
+
+### Forests and landscapes
+
+Or we seek homogeneity:
+
+![Pine Plantation](img/pine-plantation.jpg) <!-- .element width="65%" -->
+
+[USDA](https://en.wikipedia.org/wiki/Tree_plantation#/media/File:Pinus_taeda_plantation.jpg) <!-- .element: class="caption" -->
+
+</textarea>
+</section>
+
+<section data-markdown>
+<textarea data-template>
+
+### What do we lose when we remove complexity?
+
+![A complex forest in Finland](img/finland-complex.jpg) <!-- .element width="68%" class="plain"-->
+
+</textarea>
+</section>
+
+<section>
+    <h3>Capturing complexity</h3>
+    <div class="ulist">
+        <img class="plain" src="img/map.png" alt="fundiv map" width="55%" style="float: right">
+        <ul style="list-style: none; width: 40%;">
+          <li><p>TLS campaigns in FUNDIV plots</p>
+              <li><p>~60 unmanaged plots with variable species richness</p>
+              <li><p>Large unstructured pointclouds (>20 million points)</p>
+            </li>
+            </li>
+          </li>
+        </ul>
+    </div>
+</section>
+
+
+<section data-markdown>
+<textarea data-template>
+
+### Capturing complexity
+
+![Spain forest animation](img/forest-ani.gif) <!-- .element width="80%" -->
+
+</textarea>
+</section>
+
+
+<section data-markdown>
+<textarea data-template>
+
+### Individual trees
+
+![](img/seg.png) <!-- .element width="70%" class="plain"-->
+
+</textarea>
+</section>
+
+<section>
+    <h3>Tree morphology</h3>
+    <div class="ulist">
+        <img class="plain" src="img/crown.png" alt="crown volume" width="40%" style="float: right">
+        <ul style="list-style: none; width: 55%;">
+          <li><p>Calculate crown volume on individuals as a metric of tree 'success'</p>
+              <li><p>Go beyond forest or stand-level metrics</p>
+            <li><p>Identify fine scale variations between and within species</p>
+            </li>
+            </li>
+          </li>
+        </ul>
+    </div>
+</section>
+
+
+<section>
+    <h3>Topographic data</h3>
+    <div class="ulist">
+        <img class="plain" src="img/hs.png" alt="DEM" width="55%" style="float: right">
+        <ul style="list-style: none; width: 40%;">
+          <li><p>High resolution (0.05m) data allows us to quantify microtopographic variability within forests</p>
+              <li><p> </p>
+            <li><p></p>
+              <li><p></p>
+
+            </li>
+            </li>
+          </li>
+        </li>
+        </ul>
+    </div>
+</section>
+
+
+<section>
+    <h3>Surface hydrology</h3>
+    <div class="ulist">
+        <img class="plain" src="img/tc.png" alt="raster of tan curvature" width="55%" style="float: right">
+        <ul style="list-style: none; width: 40%;">
+          <li><p>Tangential curvature allows us to identify areas of accumulation and dispersion within a landscape</p>
+
+            <li><p></p>
+              <li><p></p>
+
+
+            </li>
+          </li>
+        </li>
+        </ul>
+    </div>
+    <p>Does this topographic variability manifest in tree morphology?</p>
+</section>
+
+<section>
+    <h3>Drought tolerance</h3>
+    <div class="ulist">
+        <img class="plain" src="img/spain.jpg" alt="alto tajo" width="45%" style="float: right">
+        <ul style="list-style: none; width: 50%;">
+          <li><p>Spanish plots have 4 species:</p>
+              <li><p style="color:#ff0000;">Pinus sylvestris</p>
+            <li><p style="color:#ff9292;">Pinus nigra</p>
+              <li><p style="color:#ffc8c8;">Quercus faginea</p>
+                <li><p style="color:#ffebeb;">Quercus ilex</p>
+
+            </li>
+            </li>
+          </li>
+        </li>
+        </li>
+        </ul>
+    </div>
+</section>
+
+
+
+<section data-markdown>
+<textarea data-template>
+
+### Species-landscape interactions
+
+We can use a mixed effect model to explore the relationship between these parameters, controlling for tree height:
+
+<br>
+
+$$Crown_{Vol} ∼ TreeHeight + Concavity + εpl$$
+
+
+</textarea>
+</section>
+
+<section data-markdown>
+<textarea data-template>
+
+### Species-landscape interactions
+
+![](img/mixedeffect0.png) <!-- .element width="76%" class="plain"-->
+
+</textarea>
+</section>
+
+<section data-markdown>
+<textarea data-template>
+
+### Species-landscape interactions
+
+![](img/mixedeffect1.png) <!-- .element width="76%" class="plain"-->
+
+</textarea>
+</section>
+
+<section data-markdown>
+<textarea data-template>
+
+### Species-landscape interactions
+
+![](img/mixedeffect2.png) <!-- .element width="76%" class="plain"-->
+
+</textarea>
+</section>
+
+<section data-markdown>
+<textarea data-template>
+
+### Species-landscape interactions
+
+![](img/mixedeffect3.png) <!-- .element width="76%" class="plain"-->
+
+</textarea>
+</section>
+
+<section data-markdown>
+<textarea data-template>
+
+### Species-landscape interactions
+
+![](img/mixedeffect4.png) <!-- .element width="76%" class="plain"-->
+
+</textarea>
+</section>
+
+<section data-markdown>
+<textarea data-template>
+
+### Conclusions
+
+- Microtopography is related to functional traits
+  - Can we use this knowledge to help landscape management and restoration efforts?
+
+- Big opportunity to explore forest-landscape interactions across scales
+  - Watch this space!
+
+
+</textarea>
+</section>
+
+
+
+
+			</div>
+
+		</div>
+
+		<script src="reveal/js/reveal.js"></script>
+
+		<script>
+
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: false,
+				progress: true,
+				history: true,
+				center: true,
+
+        // Parallax background image
+        parallaxBackgroundImage: "img/bg4.jpg", //https://unsplash.com/photos/OYFHT4X5isg
+
+      	// Parallax background size
+      	parallaxBackgroundSize: "4200px 1800px",
+
+        // Number of slides away from the current that are visible
+      	viewDistance: 3,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+        math: {
+		           mathjax: 'reveal/plugin/MathJax/MathJax.js',
+		           config: 'TeX-AMS_HTML-full'  // See http://docs.mathjax.org/en/latest/config-files.html
+	            },
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'reveal/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'reveal/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'reveal/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'reveal/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'reveal/plugin/search/search.js', async: true },
+					{ src: 'reveal/plugin/zoom-js/zoom.js', async: true },
+					{ src: 'reveal/plugin/notes/notes.js', async: true },
+          { src: 'reveal/plugin/math/math.js', async: true },
+          { src: 'reveal/plugin/embed-tweet.js' },
+          { src: 'reveal/plugin/reveal-svg-fragment.js', condition: function() { return !!document.querySelector( '[data-svg-fragment]' ); } },
+          { src: 'reveal/plugin/reveal-svg-fragment-big.js', condition: function() { return !!document.querySelector( '[data-svg-fragment-big]' ); } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
